@@ -80,8 +80,9 @@ jobs:
           --description "This is a revision for the ${{ matrix.appname }}-${{ github.sha }}" \
           --ignore-hidden-files \
           --s3-location s3://${{ matrix.s3-bucket }}/${{ matrix.s3-filename }}.zip \
-          ls -alrt
-      #    --source .
+          
+          --source .
+          ls 
 
       # Create deployment to CodeDeploy
       - name: AWS Create Deployment
