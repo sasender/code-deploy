@@ -1,0 +1,20 @@
+{
+  "name": "code-deploy",
+  "version": "1.0.0",
+  "description": "code-deploy-app",
+  "main": "ecosystem.config.js",
+  "scripts": {
+    "build": "ecosystem.config.js",	  
+    "test": "pm2 list"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sasender/code-deploy.git"
+  },
+  "author": "sasender",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sasender/code-deploy/issues"
+  },
+  "homepage": "https://github.com/sasender/code-deploy#readme"
+}
