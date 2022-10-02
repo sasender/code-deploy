@@ -73,16 +73,16 @@ jobs:
           aws-region: us-east-1
 
       # Deploy push to AWS S3
-      - name: AWS Deploy push
-        run: |
-          aws deploy push \
-          --application-name ${{ matrix.appname }} \
-          --description "This is a revision for the ${{ matrix.appname }}-${{ github.sha }}" \
-          --ignore-hidden-files \
-          --s3-location s3://${{ matrix.s3-bucket }}/${{ matrix.s3-filename }}.zip \
+#       - name: AWS Deploy push
+#         run: |
+#           aws deploy push \
+#           --application-name ${{ matrix.appname }} \
+#           --description "This is a revision for the ${{ matrix.appname }}-${{ github.sha }}" \
+#           --ignore-hidden-files \
+#           --s3-location s3://${{ matrix.s3-bucket }}/${{ matrix.s3-filename }}.zip \
           
-          --source .
-          ls 
+#           --source .
+#           ls 
 
       # Create deployment to CodeDeploy
       - name: AWS Create Deployment
